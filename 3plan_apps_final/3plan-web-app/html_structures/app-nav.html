@@ -1,0 +1,69 @@
+    <div class="app-nav-container">
+        <div class="nav-head big-p-app">
+            <img src="/rsc/svg/logo_3plan_blue.svg" style="width: 100%; height: 100%;" alt=""> WebApp
+        </div>
+        <div class="app-nav-main-links">
+            <ul>
+               <li class="app-nav-link-container">
+                    <a href="/main_app/dashboard.php">
+                        <div class="icon-container"><img src="/rsc/icons/home_app_logo_FILL0_wght400_GRAD0_opsz48.svg" style="width: 100%; height: 100%;" alt=""></div><div class="link-text regular-p-app">home</div>
+                        <div class="left-marker"></div>
+                    </a>
+                </li> 
+               <li class="app-nav-link-container">
+                    <a href="/main_app/personal-todo.php">
+                        <div class="icon-container"><img src="/rsc/icons/check_box_FILL0_wght400_GRAD0_opsz48.svg" style="width: 100%; height: 100%;" alt=""></div><div class="link-text regular-p-app">personal todo</div>
+                        <div class="left-marker"></div>
+                    </a>
+                </li> 
+               <li class="app-nav-link-container">
+                    <a href="/main_app/events-planner.php">
+                        <div class="icon-container"><img src="/rsc/icons/festival_FILL0_wght400_GRAD0_opsz48.svg" style="width: 100%; height: 100%;" alt=""></div><div class="link-text regular-p-app">event planner</div>
+                        <div class="left-marker"></div>
+                    </a>
+                </li> 
+               <li class="app-nav-link-container">
+                    <a href="/main_app/project-manager.php">
+                        <div class="icon-container"><img src="/rsc/icons/handyman_FILL0_wght400_GRAD0_opsz48.svg" style="width: 100%; height: 100%;" alt=""></div><div class="link-text regular-p-app">project manager</div>
+                        <div class="left-marker"></div>
+                    </a>
+                </li> 
+               <li class="app-nav-link-container">
+                    <a href="/main_app/friendlist.php">
+                        <div class="icon-container"><img src="/rsc/icons/group_add_FILL0_wght400_GRAD0_opsz48.svg" style="width: 100%; height: 100%;" alt=""></div><div class="link-text regular-p-app">friend list</div>
+                        <div class="left-marker"></div>
+                    </a>
+                </li> 
+               <li class="app-nav-link-container">
+                    <a href="/main_app/calendar.php">
+                        <div class="icon-container"><img src="/rsc/icons/calendar_month_FILL0_wght400_GRAD0_opsz48.svg" style="width: 100%; height: 100%;" alt=""></div><div class="link-text regular-p-app">calendar</div>
+                        <div class="left-marker"></div>
+                    </a>
+                </li> 
+            </ul>
+        </div>
+        <div class="app-nav-footer">
+            <div class="info-text-container">
+                <div class="top-headline regular-p-app">Three combined apps in one dashboard</div>
+                <div class="lower-headline small-p-app">Your free to use tool!</div>
+            </div>
+            <div class="footer-btn-container">
+                <div class="logout-btn-container regular-p-app"><a href="/php_scripts/logout.php">log out</a></div>
+                <div class="profile-btn-container regular-p-app"><a href="/main_app/profile.php">profile</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // nav Bar logic
+        const pageName = window.location.pathname;
+        const list = document.querySelectorAll('.app-nav-link-container > a');
+        list.forEach((item) => {
+                if (item.href.includes(pageName)) {
+                    console.log(pageName);
+                    item.classList.remove('clicked');
+                    item.classList.add('clicked');
+                }
+            }); 
+        
+    </script>
