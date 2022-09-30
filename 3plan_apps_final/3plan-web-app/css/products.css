@@ -1,0 +1,68 @@
+body {
+    overflow-x: hidden;
+}
+#ueberschrift {
+    color: var(--color-blue);
+    text-align: center;
+    font-style: normal;
+    font-size: 85px;
+    margin-top: 90px;
+}
+#ueschrift{
+    color: #ffff;
+    text-align: center
+}
+#unterschrift {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 400;
+}
+#karten {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+}
+.karte {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 35px;
+    width: 300px;
+    height: 500px;
+    background-color: #36287c2c;
+}
+.karte:not(:hover) {
+    transition: 0.3s;
+}
+.karte:hover {
+    background-image: linear-gradient(#36287c, #3184CE, #ffcccf);
+    color: #ffff;
+    cursor: pointer;
+    margin-top: 0px;
+    transition: 0.3s;
+}
+.paragraph {
+    font-weight: 300;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#sterne {
+    position: absolute;
+    top: -40px;
+    margin-left: -10px !important;
+    transform: scaleY(0.94);
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    z-index: -10;
+}

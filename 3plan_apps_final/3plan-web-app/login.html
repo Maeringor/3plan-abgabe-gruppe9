@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3plan</title>
+
+    <!--Globale Styles-->
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/design.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/elements.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/default-page-structure.css'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/login.css'>
+
+</head>
+<body>
+
+<div class="center-block">
+
+    <section class="form-input-section"> 
+
+        <div class="form-input-container">
+            <div class="fi-headline h2-app">Sign in</div>
+
+            <form action="/php_scripts/signinDAO.php" method="post">
+                <div class="input-block">
+                    <div class="basic-input-container">
+                        <input name="username" type="text" class="basic-input big-p-app" placeholder=" " minlength="1" maxlength="30">
+                        <label for="username" class="basic-input-lable big-p-app">Username</label>
+                        <span class="field_placeholder regular-p-app">Username</span>
+                    </div>
+
+                    <div class="basic-input-container">
+                        <input name="password" type="password" class="basic-input big-p-app" placeholder=" " minlength="6">
+                        <label for="password" class="basic-input-lable big-p-app">Password</label>
+                        <span class="field_placeholder regular-p-app">Password</span>
+                    </div>
+                </div>
+                
+                <!-- button submit -->
+                <div class="standart-btn-container">
+                    <button name="submit" type="submit" class="standart-btn regular-p-app">submit 
+                        <div class="arrow-container">
+                            <img src="/rsc/icons/Lucke_Projekt_WI_1_White_Arrow_Right.svg" class="left-arrow" alt="" width="20px" height="20px">
+                            <img src="/rsc/icons/Lucke_Projekt_WI_1_White_Arrow_Right.svg" class="right-arrow" alt="" width="20px" height="20px">
+                        </div>                    
+                    </button>
+                </div>
+
+                <div class="resend-container">
+                    <div class="info-btn-container">
+                        <button class="info-btn regular-p-app" style="width: 20px; height: 20px; background-color: #3184CE; border:none; border-radius: 99px;">i
+                            <div class="info-text regular-p-app">Confirm your token which was send to your mail.</div>
+                        </button>
+                        <a href="/resend-mail.html" style="color: #3184CE; font-family: 'Poppins', sans-serif; font-style: italic; font-weight: 800; margin-left: 10px;">Confirm Mail</a>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+</div>  
+</body>
+</html>

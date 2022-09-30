@@ -1,0 +1,186 @@
+.event-list .cards-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 60px;
+    justify-content: space-between;
+}
+
+.event-list .card-large {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-list .cards-container .card-large .top-block {
+    height: 9.4vh;
+    width: 100%;
+    background-color: red;
+    margin-right: 20px;
+}
+
+.event-list .cards-container .card-large .top-block .image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-list .cards-container .card-large .bottom-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+}
+
+.event-list .cards-container .card-large .bottom-block .c-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.event-list .cards-container .card-large .bottom-block .c-descr {
+    line-height: 1.3;
+}
+
+.event-list .cards-container .card-large .bottom-block .c-btn-date-container {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.event-list .cards-container .card-large .bottom-block .c-btn-date-container .c-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.event-list .cards-container .card-large .bottom-block .c-btn-date-container .event-date {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+}
+
+
+.create-event-form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: var(--app-default-shadow-blue);
+    background-color: var(--color-white);
+    padding: 40px;
+    z-index: 99;
+}
+
+.create-event-form-container .headline {
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.create-event-form-container .block-container {
+    display: flex;
+}
+
+.create-event-form-container .block-container .left-container .basic-input-container {
+    margin-bottom: 10px;
+}
+.create-event-form-container .block-container .left-container .date-time-container .basic-input-container {
+    margin-bottom: 0px;
+}
+
+.create-event-form-container .block-container .left-container .date-time-container {
+    display: flex;
+    justify-content: space-between;
+}
+.create-event-form-container .block-container .left-container .date-time-container .basic-input-container {
+    width: 45%;
+}
+.create-event-form-container .block-container .left-container .date-time-container .basic-input-container input {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.create-event-form-container .block-container .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.create-event-form-container .block-container .right-container .radio-container .radio-headline {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.checkbox-btn-online {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.checkbox-online {
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--app-color-purple);
+    border-radius: 999px;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.checkbox-online::after {
+	content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 2.5px;
+    left: 2px;
+    background-color: var(--app-color-purple);
+    border-radius: 999px;
+    display: none;
+    transition: ease-in .3s;
+}
+
+.checkbox-online:checked::after {
+    display: block;
+}
+
+.radio-colors {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.radio-colors:checked, .radio-colors:active {
+    border: 3px solid black;
+}
+
+#color-red {
+    background-color: var(--app-color-event-red);
+}
+#color-blue {
+    background-color: var(--app-color-event-blue);
+}
+#color-green {
+    background-color: var(--app-color-event-green);
+}
+#color-pink {
+    background-color: var(--app-color-event-pink);
+}

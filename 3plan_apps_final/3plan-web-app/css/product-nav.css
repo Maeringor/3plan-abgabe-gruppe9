@@ -1,0 +1,137 @@
+.pr-nav-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4vh;
+}
+
+ul {
+    list-style: none;
+}
+
+.pr-nav-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.pr-link-list {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.pr-link-list ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pr-link-list .pr-link {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pr-link-list li:last-child .pr-link{
+    margin-right: 50px;
+}
+
+.pr-link-list .pr-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    border-radius: 99px;
+    background-color: var(--color-white);
+    transition: ease-in .2s;
+}
+
+.pr-link-list .pr-link:hover::after {
+    width: 100%;
+}
+
+.sign-in-link {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.sign-in-link a {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-link a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    width: 0%;
+    height: 1px;
+    border-radius: 99px;
+    background-color: var(--color-white);
+    transition: ease-in .2s;
+}
+
+.sign-in-link a:hover::after {
+    width: 112%;
+}
+
+.sign-up-link {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    background-color: var(--product-color-skin);
+}
+
+.sign-up-link a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-link a .pr-svg-wrapper {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.sign-up-link a .pr-svg-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    border-radius: 99px;
+    background-color: var(--color-blue);
+    transition: ease-in .2s;
+    z-index: 10;
+}
+
+.sign-up-link a:hover .pr-svg-wrapper::after {
+    width: 100%;
+}

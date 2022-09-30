@@ -1,0 +1,428 @@
+body {
+    background-image: linear-gradient(#36287c, #3184CE, #ffcccf);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment:local;  
+    background-size: cover; 
+    height: 100vh;
+}
+#sterne {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+}
+#ueberschrift {
+    z-index: 2;
+    top: 25%;
+    width: 90%;
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+#unterschrift1 {
+    z-index: 2;
+    top: 40%;
+    width: 90%;
+    position: absolute;
+    color: var(--product-color-skin);
+    text-align: center;
+}
+#unterschrift2 {
+    z-index: 2;
+    top: 44%;
+    width: 90%;
+    position: absolute;
+    color: var(--product-color-skin);
+    text-align: center;
+}
+#wolke1 {
+    z-index: 3;
+    top: 270px;
+    left: 7%;
+    width: 30%;
+    height: auto;
+    position: absolute;
+}
+#wolke2 {
+    z-index: 1;
+    top: 175px;
+    right: 7%;
+    width: 35%;
+    height: auto;
+    position: absolute;
+}
+#ueberschrift3 {
+    color: var(--color-blue);
+}
+#ueberschrift4 {
+    color: var(--color-blue);
+}
+#prod-beschreibung {
+    margin-top: 80px;
+}
+#prod-beschreibung2 {
+    margin-top: 10px;
+    position: absolute;
+    right: 0px;
+}
+.button1{
+    cursor: pointer;
+    left: 44%;
+    width: 200px;
+    top: 65%;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #ffff;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s;
+}
+
+.button1:hover {
+    color: rgb(116, 153, 206);
+    background-color: white;}
+#spalte1 {
+    margin-top: 200px;
+    margin-left: 40px;
+}
+.button2{
+    margin-top: 20px;
+    cursor: pointer;
+    width: 125px;
+    text-align: center;
+    border-radius: 30px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: absolute;
+    background-color:#36287c;
+    color: white;
+}
+.button3{
+    margin-top: 20px;
+    cursor: pointer;
+    width: 150px !important;  
+    text-align: center;
+    border-radius: 30px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: absolute;
+    background-color:#36287c;
+    color: white;
+}
+.button4 {
+    right: 75px;
+    margin-top: 220px;
+    width: 200px !important;
+    text-align: center;
+    border-radius: 30px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: absolute;
+    background-color: var(--product-color-skin);
+    color: var(--color-blue);
+}
+.button5 {
+    right: 75px;
+    border: 1px solid #ffcccf;
+    margin-top: 283px;
+    width: 200px !important;
+    text-align: center;
+    border-radius: 30px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    position: absolute;
+    color: var(--color-blue);
+}
+#number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 500px;
+}
+.angebotszeilen {
+    height: 100vh;
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.angebotszeile {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.angebotszeile2 {
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+}
+.zahl {
+    position: relative;
+}
+#number {
+    position:relative ;
+    z-index: 1;
+}
+#wolke3 {
+    width: 35%;
+    z-index: 0;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+#wolke4 {
+    width: 35%;
+    z-index: 2;
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+}
+.index-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    font-size: 16px;
+    transform: scaleX(1.4);
+}
+#sign-in {
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
+}
+#pfeil_l {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 70%;
+}
+#pfeil_r {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 70%;
+}
+#wolke5 {
+    opacity: 0.97;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    transform: scaleX(1.2);
+    width: 310px;
+    z-index: 0;
+    position: absolute;
+    right: 50px;
+    top: 230px;
+}
+#wolke6 {
+    opacity: 0.97;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    transform: scaleX(1.2);
+    width: 190px;
+    z-index: 0;
+    position: absolute;
+    right: 170px;
+    top: 25px;
+}
+#wolke7 {
+    opacity: 0.97;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    transform: scaleX(1.2);
+    width: 310px;
+    z-index: 0;
+    position: absolute;
+    right: 50px;
+    top: 230px;
+}
+#wolke8 {
+    opacity: 0.97;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    transform: scaleX(1.2);
+    width: 190px;
+    z-index: 0;
+    position: absolute;
+    right: 170px;
+    top: 25px;
+}
+#wolke9 {
+    opacity: 0.97;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    transform: scaleX(1.2);
+    width: 310px;
+    z-index: 0;
+    position: absolute;
+    right: 50px;
+    top: 230px;
+}
+#wolke10 {
+    opacity: 0.97;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    transform: scaleX(1.2);
+    width: 190px;
+    z-index: 0;
+    position: absolute;
+    right: 170px;
+    top: 25px;
+}
+#wolke11 {
+    opacity: 0.97;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    transform: scaleX(1.2);
+    width: 310px;
+    z-index: 0;
+    position: absolute;
+    right: 50px;
+    top: 230px;
+}
+#wolke12 {
+    opacity: 0.97;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    transform: scaleX(1.2);
+    width: 190px;
+    z-index: 0;
+    position: absolute;
+    right: 170px;
+    top: 25px;
+}
+#pin {
+    top: 40px;
+    width: 110px;
+    z-index: 0;
+    position: absolute;
+    right: 120px;
+}
+#haken {
+    top: 95px;
+    width: 110px;
+    z-index: 0;
+    position: absolute;
+    right: 123px;
+}
+#aufteilung {
+    top: 110px;
+    width: 200px;
+    z-index: 0;
+    position: absolute;
+    right: 75px;
+}
+.spalte2 {
+    width: 370px !important;
+}
+.spalte3 {
+    width: 400px !important;
+}
+#schieber {
+    height: 70vh;
+    margin-top: 0px;
+    overflow-x: hidden;
+}
+#schieber figure {
+    position: relative;
+    width: 400%;
+    height: fit-content;
+    margin: 0;
+    left: 0;
+    animation: schieber 20s infinite;
+    animation-timing-function:cubic-bezier(0.77, 0, 0.175, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#schieber figure div {
+    width: 25%;
+    float: left;
+}
+@keyframes schieber {
+    0% {
+        left: 0%;
+    }
+    35% {
+        left: 0%;
+    }
+    40% {
+        left: -100%;
+    }
+    60% {
+        left: -100%;
+    }
+    65% {
+        left: -200%;
+    }
+    85% {
+        left: -200%;
+    }
+    90% {
+        left: -300%;
+    }
+    100% {
+        left: -300%;
+    }
+}
+@keyframes sone {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+@keyframes stwo {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: -200%;
+    }
+}
+@keyframes sthree {
+    0% {
+        left: -200%;
+    }
+    100% {
+        left: -300%;
+    }
+}
+@keyframes soner {
+    0% {
+        left: -300%;
+    }
+    100% {
+        left: -200%;
+    }
+}
+@keyframes stwor {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+@keyframes sthreer {
+    0% {
+        left: -200%;
+    }
+    100% {
+        left: -100%;
+    }
+}

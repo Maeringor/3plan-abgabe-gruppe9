@@ -1,0 +1,72 @@
+.aboutthisfarbe {
+
+    color: var(--app-color-purple);
+
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.basicfarbe{
+    color: var(--app-color-purple);
+    font-weight: 900;
+    margin-bottom: 20px;
+
+}
+
+.form-obere-section {
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 50.5vw;
+    max-width: 7000px;
+    height: fit-content;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    box-shadow: var(--app-default-shadow-blue);
+}
+
+.form-untere-section {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50.5vw;
+    max-width: 7000px;
+    height: fit-content;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    box-shadow: var(--app-default-shadow-blue);
+    padding: 40px;
+
+}
+
+.basictext{
+
+
+    font-weight: 540;
+    letter-spacing: 0.05em;
+    word-spacing: 0.2em;
+    line-height: 1.4;
+
+}
+
+#wolke1{
+    width: 13%;
+    z-index: 0;
+    position: absolute;
+    left: 200px;
+    top: 280px;
+
+}
+#wolke2{
+
+    width: 13%;
+    z-index: 1;
+    position: absolute;
+    right: 200px;
+    top: 280px;
+}
+
+

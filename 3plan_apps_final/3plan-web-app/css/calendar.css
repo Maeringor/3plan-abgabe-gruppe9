@@ -1,0 +1,175 @@
+#prevm{
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    background-image: url(/rsc/svg/arrow_back.svg);
+    background-size: cover;
+    background-color: white;
+    width: 5em;
+    height: 5em;
+    margin-left: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    box-shadow: none;
+    
+}
+#nextm{
+    position: absolute;
+    cursor: pointer;
+    background-image: url(/rsc/svg/arrow_back.svg);
+    background-size: cover;
+    background-color: white;
+    width: 5em;
+    height: 5em;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    margin-right: 2em;
+    border: none;
+    float: right;
+    box-shadow: none;
+}
+.nd{
+    display: none;
+}
+.na:hover{
+    border-radius: 0.2em;
+    background-color: white;
+
+    
+}
+.belegt{
+    border-radius: 0.2em;
+    background-color: rgb(255, 85, 85);
+}
+.kalender_cont{
+    margin-top: 2em;
+    border-radius: 2em;
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+#kalender{
+    border-spacing: 0.3em;
+    font-size: 1.3em;
+    border-collapse:separate;
+    width: 100%;
+
+}
+#kalender td {
+    color: black;
+    height: 90px;
+    width: 70px;
+}
+#kalender td.tag:hover {
+    border-radius: 0.2em;
+}
+.dayblock {
+    border-radius: 999px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--app-color-purple);
+    color: white;
+}
+.tag{
+    border-radius: 0.2em;
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    font-size: 1.2em;
+    margin-top: 30px;
+    vertical-align: top;
+    padding-top: 12px;
+    background-color: white;
+    border-radius: 0.2em;
+
+}
+#kalender th { 
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+}
+#kalender tr{
+    text-align: center;
+    font-size: 1.1em;
+    color: black;
+}
+/* Wochenende grün färben 
+ td:nth-of-type(6),td:nth-of-type(7) {
+    background: #ebf5d7;
+    color: #666;
+  }
+*/
+  caption {
+    color: rgb(0, 0, 0);
+    font-size: 2.2em;
+    font-weight: bold;
+  } 
+.month {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+  #kalender td.aktuell {
+    font-weight: bold;
+    background-color: white;
+    color: #36287c;
+    border-radius: 0.2em;
+
+  }
+.dotcontainer {
+    padding-top: 12px;
+    width: 100%;
+    column-gap: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    row-gap: 10px;
+    margin: auto;
+}
+.dayblock .dotcontainer:first-child {
+    column-gap: 0;
+
+}
+.dot {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.dot:not(:only-child):last-child {
+    margin-right: 0;
+}
+
+.dot:only-child {
+    margin-right: 0;
+}
+
+.dot .dot-body {
+    position: absolute;
+    width: 60px;
+    height: fit-content;
+    padding: 7px;
+    border-radius: 2px;
+    box-shadow: var(--app-default-shadow-blue);
+    background-color: var(--color-white);
+    z-index: 999;
+    bottom: -200%;
+    left: 60%;
+    display: none;
+    font-weight: bold;
+}
+
+.dot:hover .dot-body {
+    display: block;
+}

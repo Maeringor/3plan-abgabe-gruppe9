@@ -1,0 +1,69 @@
+.pi-top-block .headline-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pi-top-block, .pi-mid-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.pi-top-block .pi-right-block {
+    position: relative;
+    height: fit-content;
+}
+
+.pi-top-block .pi-right-block .profile-pic-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 999px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--app-default-shadow-blue);
+}
+
+#saveImg {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--app-color-purple);
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0px 0px 16px var(--app-color-purple);
+}
+
+.pi-top-block .pi-left-block form,
+.pi-mid-block form {
+    display: flex;
+    margin-bottom:55px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pi-mid-block form:last-child {
+    margin-bottom: 0;
+}
+
+.pi-top-block .pi-left-block form .c-enter-btn-container,
+.pi-mid-block form .c-enter-btn-container {
+    margin-left: 20px;
+}
+
+.pi-mid-block {
+    margin-top: 90px;
+}
+
+.pi-bottom-block {
+    margin-top: 80px;
+    float: right;
+}
+

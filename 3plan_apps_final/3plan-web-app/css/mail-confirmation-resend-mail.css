@@ -1,0 +1,77 @@
+.center-block {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input-section {
+    width: 36.5vw;
+    max-width: 700px;
+    height: fit-content;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    box-shadow: var(--app-default-shadow-blue);
+}
+
+.form-input-section .form-input-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.form-input-section .form-input-container .fi-headline {
+    margin-bottom: 40px;
+    transform: scale(.85);
+}
+
+.form-input-section .form-input-container .input-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input-section .form-input-container .input-block .basic-input-container {
+    margin-bottom: 25px;
+}
+
+.resend-container {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.info-btn-container {
+    display:flex;
+    margin: left;
+    align-items: center;
+}
+
+.info-btn {
+    position: relative;
+    color: var(--color-white);
+}
+
+.info-text {
+    position: absolute;
+    height: fit-content;
+    bottom: -280%;
+    left: 100%;
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    width: 140px;
+    display: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: var(--app-default-shadow-blue);
+}
+
+.info-btn:hover .info-text{
+    display: block;
+}

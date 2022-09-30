@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3plan</title>
+
+    <!--Globale Styles-->
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/design.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/elements.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/default-page-structure.css'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/registration.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/profile.css'>
+
+
+</head>
+<body>
+
+    <div class="center-block">
+
+        <section class="form-input-section"> 
+
+            <div class="form-input-container">
+                <div class="fi-headline h2-app">Sign up</div>
+
+                <form action="/php_scripts/signupDAO.php" method="post">
+                    <div class="input-block1" id ="input-block1">
+                        <div class="basic-input-container">
+                            <input name="username" type="text" class="basic-input big-p-app" placeholder=" " minlength="1" maxlength="30">
+                            <label for="username" class="basic-input-lable big-p-app">Username</label>
+                            <span class="field_placeholder regular-p-app">Username</span>
+                        </div>
+
+                        <div class="basic-input-container">
+                            <input name="email" type="email" class="basic-input big-p-app" placeholder=" " maxlength="50">
+                            <label for="email" class="basic-input-lable big-p-app">Email</label>
+                            <span class="field_placeholder regular-p-app">Email</span>
+                        </div>
+
+                        <div class="basic-input-container">
+                            <input name="password" type="password" class="basic-input big-p-app" placeholder=" " minlength="6">
+                            <label for="password" class="basic-input-lable big-p-app">Password</label>
+                            <span class="field_placeholder regular-p-app">Password</span>
+                        </div>
+
+                        <div class="basic-input-container">
+                            <input name="password-repeat" type="password" class="basic-input big-p-app" placeholder=" " minlength="6">
+                            <label for="password-repeat" class="basic-input-lable big-p-app">Password repeat</label>
+                            <span class="field_placeholder regular-p-app">Password repeat</span>
+                        </div>
+                        <div class ="btn-next-container standart-btn-container"><button type="button" onclick="next()" class="standart-btn">next
+                                <div class="arrow-container">
+                                    <img src="/rsc/icons/Lucke_Projekt_WI_1_White_Arrow_Right.svg" class="left-arrow" alt="" width="20px" height="20px">
+                                    <img src="/rsc/icons/Lucke_Projekt_WI_1_White_Arrow_Right.svg" class="right-arrow" alt="" width="20px" height="20px">
+                                </div> 
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="input-block2" id ="input-block2" style="display:none;">
+                        <div class="basic-input-container">
+                            <input name="fullname" type="text" class="basic-input big-p-app" placeholder=" " minlength="1" maxlength="40">
+                            <label for="fullname" class="basic-input-lable big-p-app">Full name</label>
+                            <span class="field_placeholder regular-p-app">Full name</span>
+                        </div>
+
+                        <div class="basic-input-container">
+                            <input name="strnum" type="text" class="basic-input big-p-app" placeholder=" " maxlength="50">
+                            <label for="strnum" class="basic-input-lable big-p-app">Street, Number</label>
+                            <span class="field_placeholder regular-p-app">Street, Number</span>
+                        </div>
+
+                        <div class="basic-input-container">
+                            <input name="addcit" type="text" class="basic-input big-p-app" placeholder=" " maxlength="50">
+                            <label for="addcit" class="basic-input-lable big-p-app">Adress, City</label>
+                            <span class="field_placeholder regular-p-app">Adress, City</span>
+                        </div>
+
+                        <div class="basic-input-container">
+                            <input name="country" type="text" class="basic-input big-p-app" placeholder=" " maxlength="30">
+                            <label for="country" class="basic-input-lable big-p-app">Country</label>
+                            <span class="field_placeholder regular-p-app">Country</span>
+                        </div>
+
+                        <div class="previous-next-container">
+
+                            <div class ="btn-previous-container standart-btn-container">
+                                <button type="button" onclick ="previous()" class="standart-btn regular-p-app">
+                                    <div class="arrow-container">
+                                        <img src="/rsc/icons/Lucke_Projekt_WI_1_White_Arrow_Right.svg" class="left-arrow" alt="" width="20px" height="20px">
+                                        <img src="/rsc/icons/Lucke_Projekt_WI_1_White_Arrow_Right.svg" class="right-arrow" alt="" width="20px" height="20px">
+                                    </div>  
+                                    previous
+                                </button>
+                            </div>
+                            <div class ="btn-next-container standart-btn-container">
+                                <button name="submit" type="submit" class="standart-btn regular-p-app">next
+                                    <div class="arrow-container">
+                                        <img src="/rsc/icons/Lucke_Projekt_WI_1_White_Arrow_Right.svg" class="left-arrow" alt="" width="20px" height="20px">
+                                        <img src="/rsc/icons/Lucke_Projekt_WI_1_White_Arrow_Right.svg" class="right-arrow" alt="" width="20px" height="20px">
+                                    </div>                    
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- button submit -->
+
+                </form>
+
+            </div>
+       
+
+        </section>
+      </div>
+ 
+        <script src="/js/registration-handler.js"></script>
+        
+</body>
+</html>

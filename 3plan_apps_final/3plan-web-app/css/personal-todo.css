@@ -1,0 +1,48 @@
+.todo-list .cards-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 60px;
+    justify-content: space-between;
+}
+
+.todo-list .cards-container .card {
+    display: flex;
+    overflow: hidden;
+}
+
+.todo-list .cards-container .card .left-block {
+    width: 10.4vw;
+    height: 100%;
+    background-color: red;
+    margin-right: 20px;
+}
+
+.todo-list .cards-container .card .left-block .image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list .cards-container .card .right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 20px;
+}
+
+.todo-list .cards-container .card .right-block .c-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.todo-list .cards-container .card .right-block .c-descr {
+    line-height: 1.3;
+}
+
+.todo-list .cards-container .card .right-block .c-btn-container {
+    display: flex;
+}

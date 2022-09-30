@@ -1,0 +1,42 @@
+.page-structure {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0 6vw;
+    padding-top: 40px;
+}
+
+.page-structure .page-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.page-content .headline-container {
+    width: inherit;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    margin-bottom: 80px;
+}
+
+.headline-container .left-block .app-headline {
+    margin-bottom: 10px;
+}
+
+.headline-container .right-block {
+    text-align: right;
+}
+.headline-container .right-block .today {
+    margin-bottom: 10px;
+}
+
+.content-section {
+    width: 100%;
+    height: fit-content;
+}
+
+.content-section .cs-headline {
+    margin-bottom: 20px;
+}

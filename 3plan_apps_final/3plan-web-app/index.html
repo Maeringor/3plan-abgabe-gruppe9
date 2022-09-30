@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>3plan</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="jquery-3.6.0.min.js"></script>
+    <!--Globale Styles-->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/design.css'>
+    <link rel="stylesheet" type='text/css' media='screen' href="css/index.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css/product-nav.css">
+
+</head>
+<body class="basic-padding">
+
+    <div class="pr-nav-container">
+        <div class="pr-nav-icon-container"><img src="/rsc/svg/logo_3plan_white.svg" style="width: 100%; height: 100%;" alt=""></div>
+
+        <div class="pr-link-list">
+            <ul>
+                <li><a class="pr-link" href="/products.html"><img src="/rsc/svg/product_link_text.svg" style="height: 12.3px;" alt=""></a></li>
+                <li><a class="pr-link" href="/faq.html"><img src="/rsc/svg/faq_link_text.svg" style="height: 12.3px;" alt=""></a></li>
+                <li><a class="pr-link" href="/about-this.html"><img src="/rsc/svg/about_link_text.svg" style="width: 85px; height: 12.3px;" alt=""></a></li>
+            </ul>
+            <div class="sign-in-link"><a href="/login.html"><img src="/rsc/svg/signin_link_text.svg" style="width: 57px; height: 15.5px;" alt=""></a></div>
+            <div class="sign-up-link"><a href="/registration.html"><div class="pr-svg-wrapper"><img src="/rsc/svg/singup_link_text.svg" style="width: 60px; height: 12.5px;" alt=""></div></a></div>
+        </div>
+    </div>
+
+    <div class="hintergrund";>
+        <img id="sterne" src="/rsc/deco_images/Star_BG.png" alt="sterne"> 
+        <h1 id="ueberschrift" class="h1-product">Easy Planning</h1>
+        <p id="unterschrift1" class="h2-product">Plan your next events, projects </p>
+        <p id="unterschrift2" class="h2-product"> and personal stuff!</p>
+        <img id="wolke1" src="/rsc/deco_images/Left_Cloud_Big.png" alt="wolke">
+        <img id="wolke2" src="/rsc/deco_images/Right_Cloud_Big.png" alt="wolke2">
+
+        <a class="button1" href="/registration.html">
+            <p class="index-button">get the apps</p>
+        </a>
+    </div>
+    <div class="angebotszeilen">
+        <div class="angebotszeile">
+            <div>
+                <h1 id="ueberschrift3" class="offer-font">Our Outstanding</h1>
+                <h1 id="ueberschrift4" class="offer-font">Offer</h1>
+            </div>
+            <div>
+                <p id="prod-beschreibung" class="p-product">Get three apps which will help you organize yourself,</p>
+                <p id="prod-beschreibung2" class="p-product">your team or group of friends.</p>
+            </div>
+        </div>
+        <div class="angebotszeile2">
+            <div class="zahl">
+                <img id="wolke3" src="/rsc/deco_images/Wolke_doppelt.png" alt="Wolke_doppelt">
+                <h1 id="number">3</h1>
+                <img id="wolke4" src="/rsc/deco_images/Wolke_einzeln.png" alt="Wolke_einzeln">
+            </div>
+            <div id="spalte1">
+                <span class="p-product">free</span> <span class="p-product"><b>Apps</b></span>
+                <a class="button2" href="/registration.html">
+                    <span class="index-button">I'm in</span> &nbsp;&nbsp; <span class="index-button">→</span>
+                </a>
+            </div>
+            <div id="sign-in">
+                <span class="p-product">I already have an</span> <span class="p-product"><a href="/login.html"><b>account</b></a></span> <span class="p-product">!</span> 
+            </div>
+        </div>
+    </div>
+    <div id="schieber">
+        <figure id="figure">
+                <div style="display: flex; position:relative; justify-content: space-between; transform: translateZ(0); -webkit-transform: translateZ(0);">
+                    <div class="spalte2">
+                        <h2 class="h2-product" style="color: var(--color-blue);"><b>App 1</b></h2>
+                        <h1 class="offer-font">Event App</h1>
+                        <br>
+                        <br>
+                        <p class="p-product">This app is the perfect tool to plan, publish and manage everydays or special events. Create an event using the app button. Find a place where it should take place, give a description and invite friends or work colleagues to it.</p>
+                        <br>
+                        <br>
+                        <a class="button3" href="/registration.html">
+                            <span class="index-button">Let's start</span> &nbsp;&nbsp; <span class="index-button">→</span>
+                        </a>
+                    </div>
+                    <a><img id="pfeil_l" src="/rsc/icons/arrow_left.png" alt="arrow_left" onclick="prevApp1()"></a>
+                    <a><img id="pfeil_r" src="/rsc/icons/arrow_right.png" alt="arrow_right" onclick="nextApp1()"></a>         
+                    <div class="spalte3">
+                        <img id="wolke5" src="/rsc/deco_images/Wolke_einzeln.png" alt="Wolke_einzeln">
+                        <img id="pin" src="/rsc/deco_images/location.png" alt="location">
+                        <img id="wolke6" src="/rsc/deco_images/Wolke_einzeln.png" alt="Wolke_einzeln">
+                        <div class="button4">
+                            <p class="index-button2">02/20/2024</p>
+                        </div>
+                        <div class="button5">
+                            <p class="index-button3">Max, Sandra, Charles</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; position:relative; justify-content: space-between; transform: translateZ(0); -webkit-transform: translateZ(0);">
+                    <div class="spalte2">
+                        <h2 class="h2-product" style="color: var(--color-blue);"><b>App 2</b></h2>
+                        <h1 class="offer-font">ToDo App</h1>
+                        <br>
+                        <br>
+                        <p class="p-product">This app is the perfect tool to plan, overview and manage everydays challenges. Create a ToDo list using the dashboard button. Give it a name and description and you are good to go. Add as many tasks as you want to complete to keep track of them.</p>
+                        <br>
+                        <br>
+                        <div class="button3" href="/registration.html">
+                            <span class="index-button">Let's start</span> &nbsp;&nbsp; <span class="index-button">→</span>
+                        </div>
+                    </div>
+                    <a><img id="pfeil_l" src="/rsc/icons/arrow_left.png" alt="arrow_left" onclick="prevApp2()"></a>
+                    <a><img id="pfeil_r" src="/rsc/icons/arrow_right.png" alt="arrow_right" onclick="nextApp2()"></a>         
+                    <div class="spalte3">
+                        <img id="wolke7" src="/rsc/deco_images/Wolke_einzeln.png" alt="Wolke_einzeln">
+                        <img id="haken" src="/rsc/deco_images/haken.png" alt="haken">
+                        <img id="wolke8" src="/rsc/deco_images/Wolke_einzeln.png" alt="Wolke_einzeln">
+                        <div class="button4">
+                            <p class="index-button2">Shopping list</p>
+                        </div>
+                        <div class="button5">
+                            <p class="index-button3">What I have to get from the store</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; position:relative; justify-content: space-between; transform: translateZ(0); -webkit-transform: translateZ(0);">
+                    <div class="spalte2">
+                        <h2 class="h2-product" style="color: var(--color-blue);"><b>App 3</b></h2>
+                        <h1 class="offer-font">Project App</h1>
+                        <br>
+                        <br>
+                        <p class="p-product">This app is the perfect tool to plan, overview and manage your project. Create a project using the dashboard button. Give it a name and description and image if you like and you are good to go. Add other users to your project to work as a team and find some usefull stats in the project feed.</p>
+                        <br>
+                        <br>
+                        <div class="button3" href="/registration.html">
+                            <span class="index-button">Let's start</span> &nbsp;&nbsp; <span class="index-button">→</span>
+                        </div>
+                    </div>
+                    <a><img id="pfeil_l" src="/rsc/icons/arrow_left.png" alt="arrow_left" onclick="prevApp3()"></a>
+                    <a><img id="pfeil_r" src="/rsc/icons/arrow_right.png" alt="arrow_right" onclick="nextApp3()"></a>         
+                    <div class="spalte3">
+                        <img id="wolke9" src="/rsc/deco_images/Wolke_einzeln.png" alt="Wolke_einzeln">
+                        <img id="aufteilung" src="/rsc/deco_images/aufteilung.png" alt="aufteilung">
+                        <img id="wolke10" src="/rsc/deco_images/Wolke_einzeln.png" alt="Wolke_einzeln">
+                        <div class="button4">
+                            <p class="index-button2">New website</p>
+                        </div>
+                        <div class="button5">
+                            <p class="index-button3">We aim for a new and modern webpage</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; position:relative; justify-content: space-between;">
+                    <div class="spalte2">
+                        <h2 class="h2-product" style="color: var(--color-blue);"><b>App 1</b></h2>
+                        <h1 class="offer-font">Event App</h1>
+                        <br>
+                        <br>
+                        <p class="p-product">This app is the perfect tool to plan, publish and manage everydays or special events. Create an event using the app button. Find a place where it should take place, give a description and invite friends or work colleagues to it.</p>
+                        <br>
+                        <br>
+                        <div class="button3" href="/registration.html">
+                            <span class="index-button">Let's start</span> &nbsp;&nbsp; <span class="index-button">→</span>
+                        </div>
+                    </div>
+                    <a><img id="pfeil_l" src="/rsc/icons/arrow_left.png" alt="arrow_left" onclick="prevApp1()"></a>
+                    <a><img id="pfeil_r" src="/rsc/icons/arrow_right.png" alt="arrow_right" onclick="nextApp1()"></a>         
+                    <div class="spalte3">
+                        <img id="wolke11" src="/rsc/deco_images/Wolke_einzeln.png" alt="Wolke_einzeln">
+                        <img id="pin" src="/rsc/deco_images/location.png" alt="location">
+                        <img id="wolke12" src="/rsc/deco_images/Wolke_einzeln.png" alt="Wolke_einzeln">
+                        <div class="button4">
+                            <p class="index-button2">02/20/2024</p>
+                        </div>
+                        <div class="button5">
+                            <p class="index-button3">Max, Sandra, Charles</p>
+                        </div>
+                    </div>
+                </div>
+        </figure>
+    </div>  
+
+    <script>
+
+        let wolkeone = document.getElementById("wolke1");
+        let wolketwo = document.getElementById("wolke2");
+        let wolkethree = document.getElementById("wolke4");
+        let wolkefour = document.getElementById("wolke3");
+        let wolkefive = document.getElementById("wolke5");
+        let wolkesix = document.getElementById("wolke6");
+        let wolkeseven = document.getElementById("wolke7");
+        let wolkeeight = document.getElementById("wolke8");
+        let wolkenine = document.getElementById("wolke9");
+        let wolketen = document.getElementById("wolke10");
+        let wolkeeleven = document.getElementById("wolke11");
+        let wolketwelve = document.getElementById("wolke12");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+            wolkeone.style.top = 270 + value * -0.1 + 'px';
+            wolketwo.style.top = 175 + value * 0.1 + 'px';
+            wolkethree.style.top = 450 + value * -0.05 + 'px';
+            wolkefour.style.top = -10 + value * 0.05 + 'px';
+            wolkefive.style.top = 170 + value * 0.05 + 'px';
+            wolkesix.style.top = 88 + value * -0.05 + 'px';
+            wolkeseven.style.top = 170 + value * 0.05 + 'px';
+            wolkeeight.style.top = 88 + value * -0.05 + 'px';
+            wolkenine.style.top = 170 + value * 0.05 + 'px';
+            wolketen.style.top = 88 + value * -0.05 + 'px';
+            wolkeeleven.style.top = 170 + value * 0.05 + 'px';
+            wolketwelve.style.top = 88 + value * -0.05 + 'px';
+        })
+
+        function nextApp1() {
+            var currentElement = document.getElementById("figure");
+            currentElement.style.animation = "sone 1s forwards";
+            currentElement.style.animationTimingFunction = "cubic-bezier(0.77, 0, 0.175, 1)";
+        }
+        function prevApp1() {
+            var currentElement = document.getElementById("figure");
+            currentElement.style.animation = "soner 1s forwards";
+            currentElement.style.animationTimingFunction = "cubic-bezier(0.77, 0, 0.175, 1)";
+        }
+        function nextApp2() {
+            var currentElement = document.getElementById("figure");
+            currentElement.style.animation = "stwo 1s forwards";
+            currentElement.style.animationTimingFunction = "cubic-bezier(0.77, 0, 0.175, 1)";
+        }
+        function prevApp2() {
+            var currentElement = document.getElementById("figure");
+            currentElement.style.animation = "stwor 1s forwards";            
+            currentElement.style.animationTimingFunction = "cubic-bezier(0.77, 0, 0.175, 1)";
+
+        }
+        function nextApp3() {
+            var currentElement = document.getElementById("figure");
+            currentElement.style.animation = "sthree 1s forwards";
+            currentElement.style.animationTimingFunction = "cubic-bezier(0.77, 0, 0.175, 1)";
+
+        }
+        function prevApp3() {
+            var currentElement = document.getElementById("figure");
+            currentElement.style.animation = "sthreer 1s forwards";
+            currentElement.style.animationTimingFunction = "cubic-bezier(0.77, 0, 0.175, 1)";
+        }
+
+        // disclaimer
+        alert("Disclaimer!! Diese Applikation ist im Rahmen einer Gruppenarbeit für ein Modul an einer Universität entstanden. Die entstandenen Daten werden nach der Bewertung sofort gelöscht und die Webseite ist nicht mehr erreichbar.")
+    </script>
+    
+</body>
+</html>

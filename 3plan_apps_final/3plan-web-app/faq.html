@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FAQ</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="jquery-3.6.0.min.js"></script>
+    <!--Globale Styles-->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/design.css'>
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/product-nav.css">
+</head>
+<body class="basic-padding">
+    <div class="pr-nav-container">
+        <div class="pr-nav-icon-container"><img src="/rsc/svg/logo_3plan_blue.svg" style="width: 100%; height: 100%;" alt=""></div>
+
+        <div class="pr-link-list" style="height: 80px; padding: 0 20px; background-color: #36287c; border-radius: 40px;">
+            <ul>
+                <li><a class="pr-link" href="/products.html"><img src="/rsc/svg/product_link_text.svg" style="height: 12.3px;" alt=""></a></li>
+                <li><a class="pr-link" href="/faq.html"><img src="/rsc/svg/faq_link_text.svg" style="height: 12.3px;" alt=""></a></li>
+                <li><a class="pr-link" href="/about-this.html"><img src="/rsc/svg/about_link_text.svg" style="width: 85px; height: 12.3px;" alt=""></a></li>
+            </ul>
+            <div class="sign-in-link"><a href="/login.html"><img src="/rsc/svg/signin_link_text.svg" style="width: 57px; height: 15.5px;" alt=""></a></div>
+            <div class="sign-up-link"><a href="/registration.html"><div class="pr-svg-wrapper"><img src="/rsc/svg/singup_link_text.svg" style="width: 60px; height: 12.5px;" alt=""></div></a></div>
+        </div>
+    </div>
+    <img id="sterne" src="/rsc/deco_images/Star_BG.png" alt="sterne"> 
+    <h1 id="ueberschrift" class="offer-font">Questions you might have</h1>
+    <div id="karten">
+        <div class="karte">
+            <h2 class="h2-product ueschrift">Are the apps free to use?</h2>
+            <img class="arrow" src="/rsc/icons/arrow_down.png" alt="arrow_down">
+            <div class="break"></div>
+            <p class="p-product paragraph">All three apps are free to use as of now. There will be no guarantee for updates or expansions that will be available in the future, but there won't be any hidden costs.</p>
+        </div>
+        <div class="karte">
+            <h2 class="h2-product ueschrift">Do I have to pay any additional fees?</h2>
+            <img class="arrow" src="/rsc/icons/arrow_down.png" alt="arrow_down">
+            <div class="break"></div>
+            <p class="p-product paragraph">Since all apps are completely free to use we like to keep our offer simple and don't charge any extra fees. </p>
+        </div>
+        <div class="karte">
+            <h2 class="h2-product ueschrift">Why do I need 3 apps?</h2>
+            <img class="arrow" src="/rsc/icons/arrow_down.png" alt="arrow_down">
+            <div class="break"></div>
+            <p class="p-product paragraph">We could have combined all three apps in one, but created an ui that is easy to understand and work with. Every app serves a different purpose with different use cases.</p>
+        </div>
+        <div class="karte">
+            <h2 class="h2-product ueschrift">Do I have to add all my personal information?</h2>
+            <img class="arrow" src="/rsc/icons/arrow_down.png" alt="arrow_down">
+            <div class="break"></div>
+            <p class="p-product paragraph">By default, you just have to submit your email adress and name, but if you like to interact with other people and want them to learn more about you, you can share addtitional information about you like your country and address.</p>
+        </div>
+        <div class="karte">
+            <h2 class="h2-product ueschrift">How do I add friends?</h2>
+            <img class="arrow" src="/rsc/icons/arrow_down.png" alt="arrow_down">
+            <div class="break"></div>
+            <p class="p-product paragraph">If you open your friend list, you will see a field to add a friend, where you can search for your friends.</p>
+        </div>
+        <div class="karte">
+            <h2 class="h2-product ueschrift">Is my data safe?</h2>
+            <img class="arrow" src="/rsc/icons/arrow_down.png" alt="arrow_down">
+            <div class="break"></div>
+            <p class="p-product paragraph">By default you won't be asked to share any more personal information than necessary. But if you choose to, you can feel safe about your personal information, just like all the in-app information like events and reminders.</p>
+        </div>
+        <div class="karte">
+            <h2 class="h2-product ueschrift">How many people can I invite to events?</h2>
+            <img class="arrow" src="/rsc/icons/arrow_down.png" alt="arrow_down">
+            <div class="break"></div>
+            <p class="p-product paragraph">To every event and project created, you can add an unlimited amount of people for every purpose.</p>
+        </div>
+    </div>
+    <h2 id="unterschrift" class="h2-product" style="font-style: italic; font-weight: 300;">Questions left?</h2>
+    <div class="button2" href="">
+        <a href="mailto:3planapp@gmail.com" style="color: white" class="index-button"><b>Contact us!</b></a>
+    </div>
+
+    <script>
+        var count = [];
+        const arrowCollection = document.getElementsByClassName("arrow");
+        const collection = document.getElementsByClassName("karte");
+        const textCollection = document.getElementsByClassName("paragraph");
+
+        for (let i = 0; i < collection.length; i++) {
+            count[i] = 1;
+            arrowCollection[i].addEventListener('click', function(){
+                if (count[i] % 2 != 0){
+                    collection[i].style.animation = "groesser 0.35s forwards";
+                    arrowCollection[i].style.animation = "drehung 0.35s forwards"                    //textCollection[i].style.animation = "abtauchen 0.1s forwards";
+                    textCollection[i].style.animation = "auftauchen 0.35s forwards";
+                }
+                else {
+                    collection[i].style.animation = "kleiner 0.35s forwards";
+                    arrowCollection[i].style.animation = "rueckwaerts 0.35s forwards";
+                    textCollection[i].style.animation = "abtauchen 0.1s forwards";
+                }
+                count[i] ++;
+            })
+        }
+        
+    </script>
+</body>

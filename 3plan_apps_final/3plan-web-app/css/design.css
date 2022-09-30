@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* removes basic padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* removes basic outline in chrome */
+*:focus {
+    outline: none;
+}
+
+/* setting default box sizing for any page */
+* {
+    box-sizing: border-box;
+}
+
+/* setting default padding for any page */
+.basic-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* removes default text deco in links */
+a {
+    text-decoration: none;
+}
+
+/* removes scrollbar for main app */
+.content-main-app {
+    display: flex;
+}
+
+.page-structure {
+    overflow-y: scroll;
+}
+
+.page-structure::-webkit-scrollbar {
+    display: none;
+}
+.page-structure {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+/* Colors and Sizes*/
+:root{
+    --product-color-lightblue: #3184CE;
+    --product-color-skin: #ffcccf;
+
+    --app-color-purple: #6d258a;
+    --app-color-light-purple: #d9d2ff;
+    --app-color-light-red: #ffa2b5;
+    --app-color-red: #9a3046;
+    --app-color-light-green: #a2ffa6;
+    --app-color-green: #309a47;
+    --app-color-event-red: #f34e67;
+    --app-color-event-blue: #00a8ff;
+    --app-color-event-green: #00ff96;
+    --app-color-event-pink: #f331d8;
+
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-blue: #36287c;
+    --color-grey: #ECECEC;
+
+    --app-default-shadow-blue: 1px 2px 16px rgba(54, 40, 124, 0.26);
+
+    --app-main-card-width: 18.3vw;
+    --app-main-card-height: 17.6vh;
+
+    --app-large-card-height: 24vh;
+}
+
+
+
+/* Font */
+
+.h1-product{
+    font-family: 'Poppins', sans-serif;
+    font-size: 106px;
+}
+.h2-product{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+}
+.p-product{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.h1-app{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+.h2-app{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+}
+.small-p-app{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+.regular-p-app{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.big-p-app{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.index-button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+.index-button2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.index-button3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.offer-font {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+text {
+    font-family: 'Poppins', sans-serif;
+}

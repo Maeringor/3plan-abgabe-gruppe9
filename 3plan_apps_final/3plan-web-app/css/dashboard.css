@@ -1,0 +1,182 @@
+.page-structure {
+    width: 100%;
+    height: 100vh;
+    padding: 0 6vw;
+    padding-top: 40px;
+}
+
+.page-structure .page-content {
+    width: 100%;
+    height: 100%;
+}
+
+.page-content .headline-container {
+    width: inherit;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    margin-bottom: 80px;
+}
+
+.headline-container .left-block .app-headline {
+    margin-bottom: 10px;
+}
+
+.headline-container .right-block {
+    text-align: right;
+}
+.headline-container .right-block .today {
+    margin-bottom: 10px;
+}
+
+
+.stats {
+    width: 100%;
+    height: fit-content;
+}
+
+.stats .cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stats .cards-container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats .cards-container .card .left-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(var(--color-blue), var(--app-color-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stats .cards-container .card .right-block {
+    position: relative;
+    width: 180px;
+    display: block;
+    height: fit-content;
+}
+.stats .cards-container .card .right-block .icon-containera {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    right: 10px;
+    filter: invert(80%) sepia(23%) saturate(886%) hue-rotate(200deg) brightness(102%) contrast(108%);
+}
+
+
+.app-cards {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+}
+
+.app-cards .cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-cards .cards-container .apps-card {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: var(--app-main-card-width);
+    max-width: 350px;
+    height: calc(var(--app-main-card-width) - 50px);
+    max-height: 300;
+    margin-top: 20px;
+    
+}
+
+.app-cards .cards-container .apps-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    border: 3px solid var(--color-blue);
+    z-index: -1;
+}
+
+.apps-card .top-block {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: center;
+}
+
+.apps-card .top-block .top-block-inner .icon-containera {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    filter: invert(17%) sepia(27%) saturate(5918%) hue-rotate(268deg) brightness(95%) contrast(94%);
+}
+
+.apps-card .top-block .top-block-inner .headline {
+    width: 200px;
+    font-weight: bold;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(var(--color-blue), var(--app-color-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.apps-card .app-link-container {
+    background-color: var(--color-blue);
+    width: 100%;
+    height: 60px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.apps-card .app-link-container .app-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+}
+
+.apps-card .app-link-container .app-link .btn-text {
+    color: var(--color-white);
+    margin-right: 100px;
+    
+}
+
+.apps-card .app-link-container .app-link .btn-arrow {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateZ(-35deg);
+    transition: transform ease-in .2s;
+}
+
+.apps-card .app-link-container:hover .btn-arrow {
+    transform: translateX(-30px) rotateZ(-180deg);
+}

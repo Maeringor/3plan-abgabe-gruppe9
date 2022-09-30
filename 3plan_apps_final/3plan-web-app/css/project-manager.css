@@ -1,0 +1,58 @@
+.project-list .cards-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 60px;
+    justify-content: space-between;
+}
+
+.project-list .card-large {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-list .cards-container .card-large .top-block {
+    height: 9.4vh;
+    width: 100%;
+    background-color: red;
+    margin-right: 20px;
+}
+
+.project-list .cards-container .card-large .top-block .image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-list .cards-container .card-large .bottom-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+}
+
+.project-list .cards-container .card-large .bottom-block .c-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-list .cards-container .card-large .bottom-block .c-descr {
+    line-height: 1.3;
+}
+
+.project-list .cards-container .card-large .bottom-block .c-btn-date-container {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.project-list .cards-container .card-large .bottom-block .c-btn-date-container .c-btn-container {
+    display: flex;
+    align-items: center;
+}

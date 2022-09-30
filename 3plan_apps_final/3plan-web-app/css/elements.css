@@ -1,0 +1,278 @@
+/*Main Card Small*/
+.card {
+    width: var(--app-main-card-width);
+    max-width: 350px;
+    height: var(--app-main-card-height);
+    max-height: 190px;
+    border-radius: 28px;
+    box-shadow: var(--app-default-shadow-blue);
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+
+/*Main Card Large*/
+.card-large {
+    width: var(--app-main-card-width);
+    max-width: 350px;
+    min-width: 310px;
+    height: var(--app-large-card-height);
+    max-height: 260px;
+    min-height: 220px;
+    border-radius: 28px;
+    box-shadow: var(--app-default-shadow-blue);
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+
+/* basic input fields */
+input {
+    outline: none;
+    border: none;
+}
+
+.basic-input-container {
+    position: relative;
+    width: 26.4vw;
+    max-width: 430px;
+}
+
+.basic-input-container .basic-input {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    padding-left: 30px;
+    border-radius: 18px;
+    background-color: var(--color-grey);
+    color: var(--color-blue);
+}
+
+.basic-input-container .basic-input:focus {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-blue);
+}
+
+.basic-input-lable {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    font-weight: bold;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    color: var(--color-blue);
+    transform-origin: center;
+    -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 100%;
+}
+.basic-input:focus + .basic-input-lable {
+    opacity: 0;
+    font-size: 12px;
+}
+
+.field_placeholder {
+    opacity: 0;
+    position: absolute;
+    left: 30px;
+    top: 15%;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+}
+
+.basic-input:focus ~ .field_placeholder,
+.basic-input:not(:placeholder-shown) ~ .field_placeholder {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    font-weight: bold;
+    color: var(--color-blue);
+}
+
+.basic-input:not(:placeholder-shown) ~ .basic-input-lable {
+    opacity: 0;
+}
+ 
+.special-input-lable {
+    position: absolute;
+    top: -30px;
+    display: block;
+    font-weight: bold;
+    color: var(--color-blue);
+    margin-bottom: 10px;
+}
+
+
+/* default card and enter/delete button style */
+button {
+    cursor: pointer;
+}
+
+.c-enter-btn-container {
+    width: 70px;
+    height: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.c-enter-btn-container .c-enter-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--color-white);
+    background: linear-gradient(140deg, var(--color-blue), var(--app-color-purple));
+    transition: ease-in .1s;
+}
+
+.c-enter-link:hover{
+    letter-spacing: 1px;
+}
+
+.c-delete-btn-container {
+    width: 70px;
+    height: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.c-delete-btn-container .delete-btn {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--app-color-red);
+    background-color: var(--app-color-light-red);
+}
+
+.c-delete-btn-container:hover .delete-btn{
+    color: var(--color-white);
+    background-color: var(--app-color-red);
+}
+
+.c-save-btn-container {
+    width: 70px;
+    height: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.c-save-btn-container .save-btn {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--app-color-green);
+    background-color: var(--app-color-light-green);
+}
+
+.c-save-btn-container:hover .save-btn{
+    color: var(--color-white);
+    background-color: var(--app-color-green);
+}
+
+
+.card .c-add-card-form,
+.card-large .c-add-card-form {
+    width: 100%;
+    height: 100%;
+}
+
+.card .c-add-card-btn-container,
+.card-large .c-add-card-btn-container {
+    width: 100%;
+    height: 100%;
+}
+
+.card .c-add-card-btn-container .c-add-card-btn,
+.card-large .c-add-card-btn-container .c-add-card-btn {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card .c-add-card-btn-container:hover,
+.card-large .c-add-card-btn-container:hover {
+    background: linear-gradient(140deg, var(--color-blue), var(--app-color-purple));
+}
+
+.card .c-add-card-btn-container:hover .c-add-card-btn img,
+.card-large .c-add-card-btn-container:hover .c-add-card-btn img {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(244deg) brightness(105%) contrast(101%);
+}
+
+
+/* standart button */
+.standart-btn-container {
+    width: fit-content;
+    height: fit-content;
+}
+
+.standart-btn-container .standart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 999px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    transition: ease-in .15s;
+    box-shadow: var(--app-default-shadow-blue);
+}
+
+.standart-btn-container .arrow-container {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    margin-left: 20px;
+    overflow-x: hidden;
+}
+
+.standart-btn-container .arrow-container .left-arrow {
+    position: absolute;
+    transform: translateX(-20px);
+}
+
+.standart-btn-container:hover .left-arrow {
+    transform: translateX(0);
+    -webkit-transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all .5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.standart-btn-container:hover .left-arrow {
+    transform: translateX(0);
+}
+.standart-btn-container:hover .right-arrow {
+    transform: translateX(20px);
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.standart-btn-container:hover .standart-btn:hover {
+    background-color: var(--color-black);
+}

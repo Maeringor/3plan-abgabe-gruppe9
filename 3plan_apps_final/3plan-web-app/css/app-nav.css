@@ -1,0 +1,170 @@
+.app-nav-container {
+    position: relative;
+    width: 20vw;
+    min-width: 385px;
+    max-width: 385px;
+    height: 100vh;
+    padding-top: 1.875rem;
+    box-shadow: var(--app-default-shadow-blue);
+}
+
+.nav-head {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    
+}
+
+.app-nav-main-links ul {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.app-nav-link-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.left-marker {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--app-color-purple);
+    z-index: 10;
+    opacity: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    transition: ease-in .1s;
+}
+
+.app-nav-link-container a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    color: var(--color-black);
+    transition: ease-in .1s;
+}
+
+.link-text {
+    text-transform: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+.app-nav-link-container a:hover {
+    background-color: var(--app-color-light-purple);
+}
+.app-nav-link-container a:hover .left-marker{
+   opacity: 1;
+}
+
+.icon-container {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 60px;
+}
+
+
+/* Click effect in Javascript */
+.clicked *{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--app-color-purple);
+    opacity: 1;
+    transition: ease-in .1s;
+}
+.clicked img{
+    filter: invert(17%) sepia(27%) saturate(5918%) hue-rotate(268deg) brightness(95%) contrast(94%);
+}
+
+.clicked {
+    background-color: rgb(245, 245, 245);
+}
+
+
+.app-nav-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 26vh;
+    min-height: 280px;
+    background-color: rgba(217, 210, 255, 0.3);
+}
+
+.app-nav-container .info-text-container {
+    text-align: center;
+    padding: 15px 10px;
+    width: 90%;
+    margin: auto;
+    background-color: var(--app-color-light-purple);
+    border-radius: 99px; 
+    margin-top: 30px;
+}
+
+.info-text-container .top-headline {
+    font-weight: 500;
+    color: var(--app-color-purple);
+    margin-bottom: 10px;
+}
+
+.footer-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.footer-btn-container a{
+    display: block;
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.logout-btn-container {
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid var(--color-blue);
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-btn-container a {
+    color: var(--color-blue);
+}
+
+.profile-btn-container {
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid var(--app-color-purple);
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.profile-btn-container a {
+    color: var(--app-color-purple);
+}
