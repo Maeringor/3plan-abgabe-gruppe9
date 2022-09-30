@@ -2,7 +2,7 @@
     // infos für die devs zu objektorientierter msqyli version
     // https://www.php.net/manual/de/mysqli.query.php
 
-    $host = "91.204.46.188";
+    $host = "";
     $db_username = "";
     $db_password = "";
     $db_name = "k134277_3plan_production_db";
